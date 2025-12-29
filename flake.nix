@@ -14,11 +14,11 @@
       {
         packages.default = pkgs.stdenv.mkDerivation rec {
           pname = "neve";
-          version = "0.4.1";
+          version = "0.5.0";
 
           src = pkgs.fetchurl {
             url = "https://github.com/MCB-SMART-BOY/Neve/releases/download/v${version}/neve-x86_64-unknown-linux-gnu.tar.gz";
-            sha256 = "ac11f01320378f8850bb55b0c83cde88fe0b0b1855d28869b6bbe42778867a36";
+            sha256 = "2f03f2043c8559b2f160ac6d1d654f600744fa08a546de57e7fc51aaae15e561";
           };
 
           sourceRoot = ".";
