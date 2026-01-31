@@ -14,19 +14,19 @@
         platformMap = {
           "x86_64-linux" = {
             target = "x86_64-unknown-linux-gnu";
-            sha256 = "324b0b098d7a2f60c44d2e7bef7d88da8f8067519c04af3bd78561fe3fadb294";
+            sha256 = "97ae473288b824be7b4157d9c1eddc867b6467ff25fd2ed41e430451a6253076";
           };
           "aarch64-linux" = {
             target = "aarch64-unknown-linux-gnu";
-            sha256 = "e3f2493682df57a7eb916cc15fca2aff8db23d653756796f13160b692fd9dfa6";
+            sha256 = "30ff7c258eb6b207b3c02778b7957795aa0980b66594458ad75e09daf7d55f9d";
           };
           "x86_64-darwin" = {
             target = "x86_64-apple-darwin";
-            sha256 = "be568a0938df0331a0bc6ab41a0fa5c11290d1b9c3fa24e1df8fc3f0060daee9";
+            sha256 = "659022822ec8611335e58090b03bd27b52506618cdeea4cdabf61d153963f8a7";
           };
           "aarch64-darwin" = {
             target = "aarch64-apple-darwin";
-            sha256 = "fd2708779876414039651dfe94a944013bca48b44639117615b07f588a8bfade";
+            sha256 = "5d8a304a97b98ab4b1ff52b410c28f817103427ed7929f671b8b9272dba4d44a";
           };
         };
 
@@ -35,7 +35,7 @@
       {
         packages.default = pkgs.stdenv.mkDerivation rec {
           pname = "neve";
-          version = "0.7.0";
+          version = "1.0.0";
 
           src = pkgs.fetchurl {
             url = "https://github.com/MCB-SMART-BOY/Neve/releases/download/v${version}/neve-${platformInfo.target}.tar.gz";
