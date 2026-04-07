@@ -1,5 +1,5 @@
 {
-  description = "A pure functional language for system configuration";
+  description = "A standalone language for system configuration, builds, and shell automation";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -14,19 +14,19 @@
         platformMap = {
           "x86_64-linux" = {
             target = "x86_64-unknown-linux-gnu";
-            sha256 = "97ae473288b824be7b4157d9c1eddc867b6467ff25fd2ed41e430451a6253076";
+            sha256 = "ad7f242887684d3a2d197b3b7d9253f30d132e85799ba41f50c1e8033150615d";
           };
           "aarch64-linux" = {
             target = "aarch64-unknown-linux-gnu";
-            sha256 = "30ff7c258eb6b207b3c02778b7957795aa0980b66594458ad75e09daf7d55f9d";
+            sha256 = "053a8aa644ff4dd46770b242490d64d758ff90ccdfba29592123e50ee114dc3c";
           };
           "x86_64-darwin" = {
             target = "x86_64-apple-darwin";
-            sha256 = "659022822ec8611335e58090b03bd27b52506618cdeea4cdabf61d153963f8a7";
+            sha256 = "ba9ada390c1e62d26e078d622542492b4f555f9e044ca39611958f500da717bd";
           };
           "aarch64-darwin" = {
             target = "aarch64-apple-darwin";
-            sha256 = "5d8a304a97b98ab4b1ff52b410c28f817103427ed7929f671b8b9272dba4d44a";
+            sha256 = "8d04b4dd5addbcd90ab064abe3ac2e465037e448cdeac8e147d932890349e40d";
           };
         };
 
@@ -35,7 +35,7 @@
       {
         packages.default = pkgs.stdenv.mkDerivation rec {
           pname = "neve";
-          version = "1.0.0";
+          version = "1.1.1";
 
           src = pkgs.fetchurl {
             url = "https://github.com/MCB-SMART-BOY/Neve/releases/download/v${version}/neve-${platformInfo.target}.tar.gz";
@@ -50,7 +50,7 @@
           '';
 
           meta = with pkgs.lib; {
-            description = "A pure functional language for system configuration and package management";
+            description = "A standalone language for system configuration, builds, and shell automation";
             homepage = "https://github.com/MCB-SMART-BOY/Neve";
             license = licenses.mpl20;
             platforms = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
