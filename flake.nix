@@ -18,15 +18,15 @@
           };
           "aarch64-linux" = {
             target = "aarch64-unknown-linux-gnu";
-            sha256 = "df8021e53846ec76c06b0539e0ab6bcdf0a0366b2070deae6ec362a8c78169e9";
+            sha256 = "edf12e197fa1de7b08a2ec9f76ab536a7dff3276442e55f27929d4e54fce9424";
           };
           "x86_64-darwin" = {
             target = "x86_64-apple-darwin";
-            sha256 = "df8021e53846ec76c06b0539e0ab6bcdf0a0366b2070deae6ec362a8c78169e9";
+            sha256 = "d2053860833cbe9394a03a50f81058519ccf4163ade24c49eb280f6b786bfcf3";
           };
           "aarch64-darwin" = {
             target = "aarch64-apple-darwin";
-            sha256 = "df8021e53846ec76c06b0539e0ab6bcdf0a0366b2070deae6ec362a8c78169e9";
+            sha256 = "01f198f04f5f9d5ac9e7006800e556a1096c41ad7e8895a817014c3103493b38";
           };
         };
 
