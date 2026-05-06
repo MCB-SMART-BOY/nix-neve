@@ -14,7 +14,7 @@
         platformMap = {
           "x86_64-linux" = {
             target = "x86_64-unknown-linux-gnu";
-            sha256 = "0153a6f5d6b5e7dd1efa87ca9b86093f909aa1fd4eabab87c175b66ded8b05d4";
+            sha256 = "92a901986feaa7d412d9488edb906833b6c9f3908daf578d63cff207bce53521";
           };
           "aarch64-linux" = {
             target = "aarch64-unknown-linux-gnu";
@@ -35,7 +35,7 @@
       {
         packages.default = pkgs.stdenv.mkDerivation rec {
           pname = "neve";
-          version = "3.0.0";
+          version = "3.3.0";
 
           src = pkgs.fetchurl {
             url = "https://github.com/MCB-SMART-BOY/Neve/releases/download/v${version}/neve-${platformInfo.target}.tar.gz";
