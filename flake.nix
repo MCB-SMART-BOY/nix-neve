@@ -14,7 +14,7 @@
         platformMap = {
           "x86_64-linux" = {
             target = "x86_64-unknown-linux-gnu";
-            sha256 = "1a4a6649d3af79e11afb7f9ecdf37dd6788cc6620e8fae9a06ff232a80d74e4d";
+            sha256 = "b9a18654b1533e8108b730ed53cda537c266fe5eaf9613308a3fbd817643954c";
           };
           "aarch64-linux" = {
             target = "aarch64-unknown-linux-gnu";
